@@ -1,0 +1,326 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #6200ea;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.curator-item {
+  background-color: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.curator-name {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.curator-rating {
+  color: #00c853;
+}
+/* Общие стили для формы */
+.form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6200ea;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4b0082;
+}
+
+.error-message {
+  color: #ff0000;
+}
+
+/* Специфические стили для формы входа */
+.login-form {
+  text-align: center;
+}
+
+/* Специфические стили для формы регистрации */
+.register-form {
+  text-align: center;
+}
+/* Общие стили для страницы */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.curator-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.curator-item {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.curator-item:hover {
+  background-color: #444;
+}
+
+.curator-name {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.curator-rating {
+  color: #00c853;
+  font-size: 14px;
+}
+
+.review-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6200ea;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: auto;
+  
+}
+
+.review-button:hover {
+  background-color: #4b0082;
+}
+.review-form .form-group {
+  margin-bottom: 20px;
+}
+
+.review-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.review-form input, .review-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.review-form button {
+  width: calc(50% - 10px);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6200ea;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.review-form button:last-child {
+  margin-right: 0;
+}
+
+.review-form button:hover {
+  background-color: #4b0082;
+}
+
+.review-form .error-message {
+  color: #ff0000;
+}
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.curator-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.curator-item {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.curator-item:hover {
+  background-color: #444;
+}
+
+.curator-name {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.curator-rating {
+  color: #00c853;
+  font-size: 14px;
+}
+
+.review-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6200ea;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.review-button:hover {
+  background-color: #4b0082;
+}
+
+/* Общие стили для формы */
+.form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6200ea;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4b0082;
+}
+
+.error-message {
+  color: #ff0000;
+}
