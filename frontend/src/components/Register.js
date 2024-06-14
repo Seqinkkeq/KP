@@ -1,3 +1,4 @@
+// frontend/src/components/Register.js
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -10,9 +11,7 @@ function Register() {
     e.preventDefault();
     try {
       const response = await axios.post('http://localhost:3001/register', { username, password });
-      // Выводим сообщение об успешной регистрации
       alert('Registration successful. Please log in.');
-      // Перенаправляем пользователя на страницу входа после успешной регистрации
       window.location.href = '/login';
     } catch (err) {
       console.error('Registration error:', err);

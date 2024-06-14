@@ -1,3 +1,4 @@
+// frontend/src/components/Login.js
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -12,8 +13,7 @@ function Login() {
       const response = await axios.post('http://localhost:3001/login', { username, password });
       const token = response.data.token;
       localStorage.setItem('token', token);
-      // Перенаправляем пользователя на домашнюю страницу после входа
-      window.location.href = '/home';
+      window.location.href = '/';
     } catch (err) {
       console.error('Login error:', err);
       setErrorMessage('Invalid username or password');

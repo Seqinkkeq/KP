@@ -5,6 +5,7 @@ import ReviewForm from './ReviewForm';
 function CuratorList() {
   const [curators, setCurators] = useState([]);
   const [selectedCurator, setSelectedCurator] = useState(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
     const fetchCurators = async () => {
@@ -17,6 +18,9 @@ function CuratorList() {
     };
 
     fetchCurators();
+
+    const token = localStorage.getItem('token');
+    setIsAuthenticated(!!token);
   }, []);
 
   const handleReviewSubmit = (curatorId, updatedRating) => {
@@ -36,7 +40,12 @@ function CuratorList() {
           <div key={curator.id} className="curator-item">
             <h3 className="curator-name">{curator.name}</h3>
             <p className="curator-rating">Average Rating: {curator.average_rating}</p>
-            <button className="review-button" onClick={() => setSelectedCurator(curator.id)}>
+            <button
+              className="review-button"
+              onClick={() => isAuthenticated ? setSelectedCurator(curator.id) : null}
+              disabled={!isAuthenticated}
+              title={!isAuthenticated ? 'Please log in to leave a review' : ''}
+            >
               Leave a Review
             </button>
           </div>
